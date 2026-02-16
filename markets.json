@@ -1,0 +1,5 @@
+{
+  "primary_total_market": ["VTI", "VXUS", "BND", "TIP"],
+  "alt_total_market_other_issuer": ["ITOT", "IXUS", "AGG", "TIP"],
+  "alt_largecap_proxy": ["SPY", "VXUS", "BND", "TIP"]
+}
