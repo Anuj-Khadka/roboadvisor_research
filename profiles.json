@@ -1,0 +1,20 @@
+{
+  "conservative": {
+    "start_value": 10000,
+    "lookback_months": 12,
+    "band": 0.05,
+    "max_weight": 0.60
+  },
+  "balanced": {
+    "start_value": 10000,
+    "lookback_months": 12,
+    "band": 0.05,
+    "max_weight": 0.75
+  },
+  "aggressive": {
+    "start_value": 10000,
+    "lookback_months": 12,
+    "band": 0.05,
+    "max_weight": 0.90
+  }
+}
