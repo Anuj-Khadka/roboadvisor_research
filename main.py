@@ -58,12 +58,16 @@ def update_dataset(name, tickers):
         existing = pd.read_csv(price_file, index_col=0, parse_dates=True)
         last_date = existing.index.max()
 
-        # Start from next month to avoid overlap
-        start = (last_date + pd.offsets.MonthBegin()).strftime("%Y-%m-%d")
-        new_data = download_prices(tickers, start, END_DATE, INTERVAL)
+        start_ts = last_date + pd.offsets.MonthBegin()
+        end_ts = pd.to_datetime(END_DATE)
 
-        data = pd.concat([existing, new_data])
-        data = data[~data.index.duplicated(keep="last")]
+        if start_ts > end_ts:
+            data = existing
+        else:
+            new_data = download_prices(tickers, start_ts.strftime("%Y-%m-%d"), END_DATE, INTERVAL)
+            data = pd.concat([existing, new_data])
+            data = data[~data.index.duplicated(keep="last")]
+
 
     # Ensure all tickers exist
     missing = [t for t in tickers if t not in data.columns]
