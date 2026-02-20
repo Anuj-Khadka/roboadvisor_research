@@ -1,7 +1,7 @@
 /venv
 
 
-\src\models\EXCLUDErun_constant_weight_profiles.py
-\src\models\EXCLUDEsimulate_constant_weight.py
-\src\EXCLUDEanalyze_weights.py
-\src\visualization\EXCLUDEconstant_sample.py
+EXCLUDErun_constant_weight_profiles.py
+EXCLUDEsimulate_constant_weight.py
+EXCLUDEanalyze_weights.py
+EXCLUDEconstant_sample.py
