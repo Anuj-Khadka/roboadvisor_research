@@ -1,7 +1,4 @@
 /venv
 
 
-EXCLUDErun_constant_weight_profiles.py
-EXCLUDEsimulate_constant_weight.py
-EXCLUDEanalyze_weights.py
-EXCLUDEconstant_sample.py
+EXCLUDEsimulate_regular_charts.ipynb
