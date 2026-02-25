@@ -1,5 +1,8 @@
 {
-  "primary_total_market": ["BND", "GLD", "TIP", "TLT", "VEU", "VGT"]
+  "initial_investment": 1000,
+  "monthly_investment": 100,
+  "markets": {
+    "primary_total_market": ["BND", "GLD", "TIP", "TLT", "VEU", "VGT"]
+  }
 }
-
 
