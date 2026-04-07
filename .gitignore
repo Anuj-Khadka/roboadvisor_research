@@ -5,3 +5,5 @@ venv/
 
 EXCLUDEsimulate_regular_charts.ipynb
 src/EXCLUDE_ARCHIVE/
+
+src/models/10006_sample_portfolio_model.ipynb
